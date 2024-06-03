@@ -1,0 +1,17 @@
+! Welcome to GOLD Parser Builder 5.2
+
+"Name" = 'Calculadora'
+"Author" = 'Equipo4'
+"Version" = '1.0'
+"About" = 'Calculadora basica con funciones coseno y e elevado a la x'
+        
+Entero = {Number}+
+Decimal = {Number}+'.'{Number}+
+        
+"Start Symbol" = <E>
+ 
+<E> ::= <E> '+' <T> | <E> '-' <T> | <T>
+<T> ::= <T> '*' <F> | <T> '/' <F> | <F>
+<F> ::= '(' <E> ')' | Entero | Decimal | <G> 
+<G> ::= 'sen' '(' <E> ')' | <H>
+<H> ::= 'exp' '^' '(' <E> ')'
