@@ -1,0 +1,20 @@
+! Welcome to GOLD Parser Builder 5.2
+
+"Name" = 'Calculadora'
+"Author" = 'Alfredo Lopez Mendez'
+"Version" = '1.0'
+"About" = 'Calculadora basica con funciones seno y e elevado a la x'
+        
+Entero = {Number}+
+Decimal = {Number}+'.'{Number}+
+        
+"Start Symbol" = <E>
+ 
+<E> ::= <E> '+' <T> | <E> '-' <T> | <T>
+<T> ::= <T> '*' <F> | <T> '/' <F> | <F>
+<F> ::= '(' <E> ')' | Entero | Decimal | <G> 
+<G> ::= 'sin' '(' <E> ')' | <H>
+<H> ::= 'cos' '(' <E> ')' | <I>
+<I> ::= 'tan' '(' <E> ')' | <J>
+<J> ::= 'exp' '^' '(' <E> ')' | <K>
+<K> ::= 'sqrt' '(' <E> ',' <E> ')'
