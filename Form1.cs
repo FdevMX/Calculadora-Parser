@@ -18,7 +18,7 @@ namespace CalculadoraExamen
         MyParser parser;
         public Form1()
         {
-            parser = new MyParser(Application.StartupPath + "\\gramatica.cgt");
+            parser = new MyParser(Application.StartupPath + "\\gramar_tables.cgt");
             InitializeComponent();
         }
 
