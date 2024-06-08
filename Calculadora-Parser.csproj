@@ -33,13 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CalithaLib, Version=1.13.2403.14266, Culture=neutral, PublicKeyToken=6fe80ec331a66ec8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Gramatica\CalithaLib.dll</HintPath>
+    <Reference Include="CalithaLib">
+      <HintPath>files\dll\CalithaLib.dll</HintPath>
     </Reference>
-    <Reference Include="GoldParserEngine, Version=1.13.2403.14266, Culture=neutral, PublicKeyToken=6fe80ec331a66ec8, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Gramatica\GoldParserEngine.dll</HintPath>
+    <Reference Include="GoldParserEngine">
+      <HintPath>files\dll\GoldParserEngine.dll</HintPath>
     </Reference>
     <Reference Include="RJCodeAdvance.RJControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\RJCodeAdvance.RJControls.1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
@@ -74,6 +72,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\gramar_tables.cgt" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
